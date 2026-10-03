@@ -48,13 +48,15 @@ An end-to-end Big Data & Business Intelligence pipeline that bridges marketing a
 
 ```text
 .
-├── Map.py                     # Mapper script for Hadoop Streaming
-├── Reduce.py                  # Reducer script for Hadoop Streaming
-├── spark_job.py               # PySpark sentiment scoring & K-Means clustering script
-├── SSIS_Pipeline/             # SSIS ETL control and data flow packages
-├── SQL_Scripts/               # DDL for DW tables, constraints, and optimized SQL views
-├── SSAS_Cube/                 # SSAS Multidimensional project files & MDX calculations
-└── Dashboards/                # Power BI (.pbix) templates for Live Connect views
+├── HadoopFile/                
+|    ├── Map.py
+|    |── Reduce.py
+|    |── Saprk.py
+|    |── csv files
+├── SSIS_pipeline_etl/                   # SSIS ETL control and data flow packages + SQL pipeline
+├── SSAS_pipeline/                       # SSAS Multidimensional project files & MDX calculations
+|── rapport_final_du_projet.pdf          # french report explaining in details the whole project
+└── project_marketing.pbix               # Power BI (.pbix) templates for Live Connect views
 ```
 
 ---
